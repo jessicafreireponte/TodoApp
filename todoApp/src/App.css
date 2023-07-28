@@ -1,0 +1,19 @@
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.white {
+  background-color: #e3e8e8;
+  color: #0c1323;
+}
+
+.black {
+  background-color: #0c1323;
+  color: #e3e8e8;
+}
+
+main {
+  width: 70%;
+}

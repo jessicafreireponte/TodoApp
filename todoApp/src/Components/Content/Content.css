@@ -1,0 +1,98 @@
+.containerList {
+  width: 100%;
+}
+
+form,
+ul.listUl {
+  width: 100%;
+  background-color: #181d30;
+  color: #b8b6bc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul.listUl {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+form input[type="text"] {
+  background-color: #181d30;
+  width: 100%;
+  border: none;
+  color: #b8b6bc;
+}
+
+form input[type="text"]:focus {
+  border-bottom: 1px solid #7247ae;
+  outline: none;
+}
+/* Estilo del checkbox redondo */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Oculta el checkbox por defecto */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Estilo del círculo redondo que representa el checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #181d30; /* Color naranja */
+  border: 1px solid #0c1323;
+}
+
+/* Estilo del check (✓) que aparecerá cuando el checkbox esté marcado */
+.checkbox-container input:checked ~ .checkmark:after {
+  content: "✓";
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+}
+
+/* Estilo cuando el checkbox está marcado */
+.checkbox-container input:checked ~ .checkmark {
+  border: none;
+  background: rgb(91, 171, 195);
+  background: linear-gradient(
+    45deg,
+    rgba(91, 171, 195, 1) 20%,
+    rgba(114, 71, 174, 1) 80%
+  );
+}
+
+p.error {
+  width: 100%;
+  text-align: center;
+  color: red;
+  display: none;
+}
+
+p.error.visible {
+  display: block;
+}
+
+li.checkboxList {
+  padding: 10px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid #b8b6bc;
+}

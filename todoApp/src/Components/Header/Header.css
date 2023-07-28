@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  letter-spacing: 1.2rem;
+}
+
+header button {
+  border: none;
+  background-color: transparent;
+}
